@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Easy Password Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+      <div class="box_super_sicuro">
+
+        <h1>Ecco la tua password super sicura :</h1>
+
+        <span id="password"></span><span>19</span>
+
+      </div>
+
+      <div class="pwned">
+
+        <button class="my-btn" onclick="myFunction()">Verifica la password che hai generato</button>
+
+        <p id="verifica-password"></p>
+
+        <script>
+        function myFunction() {
+          var passwordpwned = "This password has previously appeared in a data breach and should never be used.";
+          document.getElementById("verifica-password").innerHTML = passwordpwned;
+        }
+        </script>
+
+      </div>
+
+    </div>
+
+  <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+</html>
