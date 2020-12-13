@@ -9,7 +9,11 @@
 </head>
 <body>
 
-    <div class="container">
+  <div id="canvas-wrap">
+
+    <canvas id="c"></canvas>
+
+    <div class="container" id="overlay">
 
       <div class="box_super_sicuro">
 
@@ -25,16 +29,11 @@
 
         <p id="verifica-password"></p>
 
-        <script>
-        function myFunction() {
-          var passwordpwned = "This password has previously appeared in a data breach and should never be used.";
-          document.getElementById("verifica-password").innerHTML = passwordpwned;
-        }
-        </script>
-
       </div>
 
     </div>
+
+  </div>
 
   <script src="js/script.js" charset="utf-8"></script>
 

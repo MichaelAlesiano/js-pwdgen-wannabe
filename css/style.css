@@ -1,17 +1,29 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: black;
+}
+
+canvas {
+  display: block;
 }
 
 .my-btn {
   padding: 8px 8px;
+}
+
+#canvas-wrap {
+  position:relative
+}
+
+#overlay {
+  position:absolute;
+  top:220px;
+  left:685px;
 }
 
 .container {
@@ -22,7 +34,6 @@ body {
 
 .box_super_sicuro {
   background-color: #28872e;
-  margin-top: 150px;
   border-radius: 4px;
   padding: 30px 30px;
 }
